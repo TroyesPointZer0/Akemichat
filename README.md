@@ -1,6 +1,7 @@
-Akemichat 2
-===========
+Akemichat
+=========
 
+**This project is still in development**
 
 What's up ?
 -----------
@@ -34,7 +35,6 @@ Simply use the following commands:
 git clone akemichat
 cd akemichat
 npm install
-bower install
 ```
 
 ### How to launch
