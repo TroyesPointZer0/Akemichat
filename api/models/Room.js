@@ -17,7 +17,7 @@ module.exports = {
 
         description: {
             type:     'string'
-        }
+        },
 
         // Array of users id
         users: {

@@ -11,18 +11,22 @@ module.exports = {
     attributes: {
 
         message: {
-            type: 'string',
+            type:     'string',
             required: true
         },
 
         room: {
-            type: 'string',
+            type:     'string',
             required: true
         },
 
         user: {
-            type: 'string',
+            type:     'string',
             required: true
+        },
+
+        creation: {
+            type:     'datetime'
         }
     }
 };
