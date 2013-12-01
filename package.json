@@ -1,0 +1,32 @@
+{
+    "name":        "akemichat2",
+    "private":     true,
+    "version":     "0.0.0",
+    "description": "a Sails application",
+    "dependencies": {
+        "sails":              "0.9.7",
+        "grunt":              "0.4.1",
+        "sails-disk":         "~0.9.0",
+        "ejs":                "0.8.4",
+        "optimist":           "0.3.4",
+        "sails-mongo":        "latest",
+        "less":               "latest",
+        "grunt-contrib-less": "latest",
+        "bower":              "latest",
+        "connect-flash":      "latest",
+        "passport":           "latest",
+        "passport-local":     "latest",
+        "bcrypt":             "latest"
+    },
+    "scripts": {
+        "start": "node app.js",
+        "debug": "node debug app.js"
+    },
+    "main":       "app.js",
+    "repository": "",
+    "author":     "Maxime Veber <nek.dev@gmail.com>",
+    "license":    "MIT",
+    "scripts": {
+        "install": "bower install"
+    }
+}

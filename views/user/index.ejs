@@ -1,0 +1,48 @@
+<% if (users.length > 0) { %>
+
+<h2><%= __('user.list.title') %></h2>
+
+<p><%= __('user.tmp') %></p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th><%= __('user.list.valid') %></th>
+            <th><%= __('user.list.email') %></th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for (var i=0; i < users.length; i++) { %> 
+            <tr>
+                <td>
+                    <% if(users[i].firstConnection) { %>
+                        <span class="success"><%= __('yes') %></span> 
+                    <% } else { %>
+                        <span class="error"><%= __('no') %></span>
+                    <% } %>
+                </td>
+                <td><%= users[i].email %></td>
+            </tr>
+        <% } %>
+    </tbody>
+</table>
+
+<% } else { %>
+
+<p><%= __('user.no_users') %></p>
+
+<% } %>
+
+<hr />
+
+<fieldset>
+    <legend><%= __('user.form.title') %></legend>
+    <form role="form" action="/admin/user" method="post">
+        <% if (error) { %> <p class="error"><%= __('user.create.error') %></p> <% } %>
+        <div class="form-group">
+            <input type="email" class="form-control" id="user_email" value="<%= email %>" name="user_email" placeholder="<%= __('user.form.email') %>" />
+        </div>
+        <p><%= __('user.form.explanations') %></p>
+        <button type="submit" class="btn btn-success"><%= __('user.form.submit') %></button>
+    </form>
+</fieldset>

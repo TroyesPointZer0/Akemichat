@@ -1,0 +1,44 @@
+{
+    "Welcome": "Welcome",
+
+    "user.no_users":                    "Oops, there is no user in the database... That's weird :x .",
+    "user.tmp":                         "There is users to list but the table is not ready... :-°",
+    "user.list.title":                  "List of users",
+    "user.form.title":                  "Add a new user",
+    "user.form.email":                  "Email address",
+    "user.form.explanations":           "Create a user here authorize a user to sign up with the email you specify. Every other informations will be ask when the user really sign in.",
+    "user.form.submit":                 "Submit",
+    "user.create.error":                "The email address is not valid.",
+    "user.list.email":                  "Email address",
+    "user.list.valid":                  "Valid",
+
+    "user.form.login.email":            "Email address",
+    "user.form.login.password":         "Password",
+    "user.form.login.login":            "Log in",
+    "user.form.login.signin":           "Registration",
+    "user.flash.need_signin":           "You have to sign in before be able to login.",
+    "user.flash.wrong_email":           "Wrong email address",
+    "user.flash.wrong_pass":            "Wrong password",
+    "user.form.signin.signin":          "Sign in",
+    "user.form.signin.email":           "Email address",
+    "user.form.signin.password":        "Password",
+    "user.form.signin.password2":       "Password (one more time)",
+    "user.form.signin.username":        "Username",
+    "user.form.signin.firstname":       "Firstname",
+    "user.form.signin.lastname":        "Lastname",
+    "user.form.signin.valid":           "Finish my registration !",
+    "user.form.success.signin":         "Registration finished ! Welcome :-) .",
+    "user.form.signin.error":           "Impossible to process your registration.",
+    "user.form.error.already_register": "You already are register.",
+    "user.form.error.cant_register":    "You are not authorized to register, contact an administrator.",
+    "user.form.error.username_exists":  "This username is already in use.",
+    "user.form.error.username_empty":   "The username can't be empty.",
+    "user.form.error.email_empty":      "The email address can't be empty.",
+    "user.form.error.password_empty":   "The minimum length for password is 4 characters.",
+
+    "admin.actions.manage_users":       "Users management",
+
+
+    "yes":                              "yes",
+    "no":                               "no"
+}

@@ -1,0 +1,25 @@
+<fieldset>
+    <legend>Login</legend>
+    <p class="success">
+        <% for (var i = 0; i < success.length; i++) {%>
+            <%= __(success[i]) %> <br />
+        <% } %>
+    </p>
+    <p class="error">
+        <% for (var i = 0; i < error.length; i++) {%>
+            <%= __(error[i]) %> <br />
+        <% } %>
+    </p>
+    <form action="/login-process" method="post" role="form">
+        <div class="form-group">
+            <label for="email"><%= __('user.form.login.email') %></label>
+            <input type="email" class="form-control" name="username" id="email" required="required" />
+        </div>
+        <div class="form-group">
+            <label for="password"><%= __('user.form.login.password') %></label>
+            <input type="password" name="password" id="password" class="form-control" required="required" />
+        </div>
+        <button type="submit" class="btn btn-primary"><%= __('user.form.login.login') %></button>
+        <a href="/sign-in.html" class="btn btn-success"><%= __('user.form.login.signin') %></a>
+    </form>
+</fieldset>

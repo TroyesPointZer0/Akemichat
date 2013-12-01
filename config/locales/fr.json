@@ -1,0 +1,44 @@
+{
+    "Welcome": "Bienvenue",
+
+    "user.no_users":                    "Oups, il n'y a aucun utilisateur dans la base de données... C'est étrange :x .",
+    "user.tmp":                         "Il y a des utilisateurs à lister, mais le tableau n'est pas prêt :-° .",
+    "user.list.title":                  "Liste des utilisateurs",
+    "user.form.title":                  "Ajouter un nouvel utilisateur",
+    "user.form.email":                  "Adresse email",
+    "user.form.explanations":           "Le fait de créer un utilisateur autorise un utilisateur à s'inscrire avec cette adresse email. Toutes les informations concernant son profil seront mises à jour lors de son inscription.",
+    "user.form.submit":                 "Envoyer",
+    "user.create.error":                "L'adresse email n'est pas valide.",
+    "user.list.email":                  "Adresse email",
+    "user.list.valid":                  "Validé",
+
+    "user.form.login.email":            "Adresse email",
+    "user.form.login.password":         "Mot de passe",
+    "user.form.login.login":            "Se connecter",
+    "user.form.login.signin":           "S'inscrire",
+    "user.flash.need_signin":           "Vous devez être inscrit pour pouvoir vous connecter.",
+    "user.flash.wrong_email":           "Mauvaise adresse email",
+    "user.flash.wrong_pass":            "Mauvais mot de passe",
+    "user.form.signin.signin":          "Inscription",
+    "user.form.signin.email":           "Adresse email",
+    "user.form.signin.password":        "Mot de passe",
+    "user.form.signin.password2":       "Mot de passe (encore une fois)",
+    "user.form.signin.username":        "Nom d'utilisateur",
+    "user.form.signin.firstname":       "Prénom",
+    "user.form.signin.lastname":        "Nom",
+    "user.form.signin.valid":           "Finaliser mon inscription !",
+    "user.form.success.signin":         "Inscription terminée ! Bienvenue parmi nous :-) .",
+    "user.form.signin.error":           "Impossible de procéder à votre inscription",
+    "user.form.error.already_register": "Vous êtes déjà inscrit.",
+    "user.form.error.cant_register":    "Vous n'êtes pas autorisé à vous inscrire, contactez un administrateur.",
+    "user.form.error.username_exists":  "Ce nom d'utilisateur est déjà pris.",
+    "user.form.error.username_empty":   "Le nom d'utilisateur ne peut pas être vide.",
+    "user.form.error.email_empty":      "L'adresse email ne peut pas être vide.",
+    "user.form.error.password_empty":   "Le mot de passe doit faire minimum 4 caractères.",
+
+    "admin.actions.manage_users":       "Gestion des utilisateurs",
+
+
+    "yes":                              "oui",
+    "no":                               "non"
+}

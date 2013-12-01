@@ -1,0 +1,80 @@
+<fieldset>
+    <legend><%= __('user.form.signin.signin') %></legend>
+
+    <% if (messages.length > 0) { %>
+    <p class="error">
+        <%= __('user.form.signin.error') %>
+    </p>
+    <ul class="error">
+        <% for (var i = 0; i < messages.length; i++) {%>
+            <li><%= __(messages[i]) %></li>
+        <% } %>
+    </ul>
+    <% } %>
+
+    <form action="/sign-in-process" method="post" role="form">
+        <div class="form-group">
+            <label for="username"><%= __('user.form.signin.username') %></label>
+            <input
+                type="text"
+                class="form-control"
+                name="username"
+                id="username"
+                placeholder="<%= __('user.form.signin.username') %>"
+                value="<% if (form_data.username) { %><%= form_data.username %><% } %>" />
+        </div>
+        <div class="row">
+            <div class="form-group col-md-6">
+                <label for="firstname"><%= __('user.form.signin.firstname') %></label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="firstname"
+                    id="firstname"
+                    placeholder="<%= __('user.form.signin.firstname') %>"
+                    value="<% if (form_data.firstname) { %><%= form_data.firstname %><% } %>" />
+            </div>
+            <div class="form-group col-md-6">
+                <label for="lastname"><%= __('user.form.signin.lastname') %></label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="lastname"
+                    id="lastname"
+                    placeholder="<%= __('user.form.signin.lastname') %>"
+                    value="<% if (form_data.lastname) { %><%= form_data.lastname %><% } %>" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email"><%= __('user.form.signin.email') %></label>
+            <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="email"
+                placeholder="<%= __('user.form.signin.email') %>"
+                value="<% if (form_data.email) { %><%= form_data.email %><% } %>" />
+        </div>
+        <div class="row">
+            <div class="form-group col-md-6">
+                <label for="password"><%= __('user.form.signin.password') %></label>
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form-control"
+                    placeholder="<%= __('user.form.signin.password') %>" />
+            </div>
+            <div class="form-group col-md-6">
+                <label for="password2"><%= __('user.form.signin.password2') %></label>
+                <input
+                    type="password"
+                    name="password2"
+                    id="password2"
+                    class="form-control"
+                    placeholder="<%= __('user.form.signin.password') %>" />
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary"><%= __('user.form.signin.valid') %></button>
+    </form>
+</fieldset>
